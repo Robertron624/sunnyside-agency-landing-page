@@ -441,4 +441,26 @@ footer .social-media ul {
         width: 50%;
         line-height: 30px;
     }
+
+    #testimonials .testimonial {
+        height: 100%;
+        gap: 1rem;
+    }
+
+    #testimonials .testimonials-cards{
+        display: flex;
+    }
+
+    #testimonials .testimonials-cards .testimonial-text{
+        padding: 0 5rem;
+    }
+
+    #gallery {
+        display: flex !important;
+    }
+
+    footer .footer-content {
+        width: 20%;
+        margin-inline: auto;
+    }
 }
