@@ -3,6 +3,8 @@ body {
 
     /* Primary */
 
+    --blue-contact: rgb(134,204,250);
+
     --header-color: rgb(101,188,249);
 
     --soft-red: hsl(7, 99%, 70%);
@@ -50,7 +52,6 @@ header .logo-nav {
 }
 
 header .heading {
-    height: 80%;
     display: flex;
     position: relative;
     padding-top: 3rem;
@@ -66,7 +67,7 @@ header .heading h1 {
 
 header .heading img {
     position: absolute;
-    bottom: 18%;
+    top: 18%;
 }
 
 h1, h2, p {
@@ -139,6 +140,10 @@ div.feature .feature-image img {
     width: 100%;
 }
 
+div.feature .feature-image .mobile-desktop {
+    display: none;
+}
+
 div.feature .feature-text {
     padding: 2rem 1rem;
 }
@@ -189,6 +194,10 @@ div#stand-out .feature-text a::after {
 section#services .service {
     position: relative;
     height: 35rem;
+}
+
+section#services .service .desktop-image {
+    display: none;
 }
 
 .service img {
@@ -320,4 +329,116 @@ footer .social-media ul {
     align-items: center;
     margin-top: 5rem;
     padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 2rem 2rem;
+        background-image: url(./images/desktop/image-header.jpg);
+        height: 38rem;
+    }
+
+    header .heading img {
+        bottom: 35%;
+    }
+
+    header .logo img{
+        width: 10rem;
+    }
+
+    header .mobile-menu {
+        display: none;
+    }
+
+    header .desktop-nav {
+        display: flex;
+
+    }
+    header .desktop-nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    header .desktop-nav ul li a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.1rem;
+    }
+
+    header .desktop-nav ul li:last-child a{
+        background-color: var(--white);
+        padding: 1rem 2rem;
+        border-radius: 30px;
+    }
+    header .desktop-nav ul li:last-child a{
+        color: black;
+        font-family: 'Fraunces', sans-serif;
+        text-transform: uppercase;
+        font-size: .875rem;
+        transition: all .3s ease-in-out;
+    }
+
+    header .desktop-nav ul li:last-child a:hover{
+        background-color: var(--blue-contact);
+        color: white;
+    }
+
+    header .heading img {
+        top: 200%;
+    }
+    
+
+    #features .feature {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #features .feature:first-child .feature-image{
+        order: 1;
+    }
+
+    #features .feature .feature-image .image-mobile {
+        display: none;
+    }
+
+    #features .feature .feature-image .image-desktop {
+        display: block;
+    }
+
+    #features .feature .feature-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0 10rem;
+        text-align: left;
+    }
+    #features .feature .feature-text p {
+        padding: 0;
+    }
+
+    #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #services .service {
+        height: unset;
+    }
+
+    #services .service .mobile-image {
+        display: none;
+    }
+
+    #services .service .desktop-image {
+        display: block !important;
+    }
+
+    #services .service .service-text {
+        width: 50%;
+        line-height: 30px;
+    }
 }
