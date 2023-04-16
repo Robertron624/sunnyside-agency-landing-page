@@ -39,6 +39,15 @@
       <h1>We are creatives</h1>
       <img src="./images/icon-arrow-down.svg" alt="arrow down">
     </div>
+
+    <div class="menu-container mobile-inactive">
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
   </header>
 
   <main>
@@ -161,5 +170,16 @@
       </div>
     </div>
   </footer> 
+
+  <script>
+    const mobileMenuTrigger = document.querySelector('.mobile-menu');
+
+    const mobileMenu = document.querySelector('.menu-container');
+
+    mobileMenuTrigger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('mobile-inactive');
+    });
+    
+  </script>
 </body>
 </html>

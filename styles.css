@@ -37,6 +37,7 @@ h1, h2, h3, h4 {
 }
 
 header {
+    position: relative;
     height: 26rem;
     align-items: center;
     padding: 2rem 1rem;
@@ -83,6 +84,55 @@ h1, h2, p {
 .mobile-menu img {
     width: 20px;
     height: 20px;
+}
+
+.mobile-inactive {
+    display: none;
+}
+
+.menu-container {
+    background-color: var(--white);
+    width: 90%;
+    position: absolute;
+    top: 21%;
+}
+
+.menu-container::before {
+    content: '◢';
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1.2rem;
+}
+
+
+.menu-container .menu {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2.5rem;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+}
+
+.menu li:last-child {
+    background-color: var(--yellow);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+
+.menu li:last-child a {
+    color: black;
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
 }
 
 div.feature .feature-image img {
