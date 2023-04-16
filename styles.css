@@ -67,7 +67,7 @@ header .heading h1 {
 
 header .heading img {
     position: absolute;
-    top: 18%;
+    top: 118%;
 }
 
 h1, h2, p {
@@ -141,7 +141,7 @@ div.feature .feature-image img {
     width: 100%;
 }
 
-div.feature .feature-image .mobile-desktop {
+div.feature .feature-image .image-desktop {
     display: none;
 }
 
@@ -209,6 +209,10 @@ section#services .service .desktop-image {
 
 .service img {
     width: 100%;
+}
+
+#services .service .mobile-image {
+    height: 100%;
 }
 
 .service .service-text {
@@ -427,6 +431,7 @@ footer .social-media ul li a:hover {
 
     #features .feature .feature-image .image-desktop {
         display: block;
+        height: 100%;
     }
 
     #features .feature .feature-text {
@@ -460,6 +465,7 @@ footer .social-media ul li a:hover {
 
     #services .service .desktop-image {
         display: block !important;
+        height: 100%;
     }
 
     #services .service .service-text {
