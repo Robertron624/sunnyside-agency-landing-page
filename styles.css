@@ -1,0 +1,122 @@
+body {
+    /*Colors */
+
+    /* Primary */
+
+    --header-color: rgb(101,188,249);
+
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    /* (graphic design text) */
+    --dark-desaturated-cyan : hsl(167, 40%, 24%);
+    /* (photography text) */
+    --dark-blue : hsl(198, 62%, 26%);
+    /* (footer) */
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+    /* Neutral */
+
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Fonts */  
+    font-family: 'Barlow', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+h1, h2 {
+    font-family: 'Fraunces', sans-serif;
+}
+
+header {
+    height: 26rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: url(./images/mobile/image-header.jpg) no-repeat center center/cover;
+}
+
+header .logo-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .heading {
+    height: 80%;
+    display: flex;
+    position: relative;
+    padding-top: 3rem;
+    justify-content: center;
+}
+
+header .heading h1 {
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 10px;
+}
+
+header .heading img {
+    position: absolute;
+    bottom: 18%;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.logo img {
+    width:  100px;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.mobile-menu img {
+    width: 20px;
+    height: 20px;
+}
+
+section#transform .transform-image img {
+    width: 100%;
+}
+
+section#transform .transform-text {
+    padding: 2rem 1rem;
+}
+
+.transform-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.transform-text p {
+    font-size: 1rem;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.transform-text a {
+    font-family: 'Fraunces', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.transform-text a:visited {
+    color: black;
+}
