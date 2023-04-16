@@ -76,6 +76,7 @@ h1, h2, p {
 
 .logo img {
     width:  100px;
+    cursor: pointer;
 }
 
 .desktop-nav {
@@ -181,6 +182,12 @@ div.feature .feature-text {
     height: 5px;
     background: var(--yellow);
     filter: blur(2px);
+    opacity: .5;
+    transition: opacity .3s ease-in-out;
+}
+
+.feature-text a:hover::after {
+    opacity: 1;
 }
 
 div#stand-out .feature-text a::after {
@@ -318,6 +325,7 @@ footer .footer-links ul li a {
     text-decoration: none;
     color: var(--dark-desaturated-cyan);
     font-size: 1.1rem;
+    transition: all .3s ease-in-out;
 }
 
 footer .social-media ul {
@@ -329,6 +337,19 @@ footer .social-media ul {
     align-items: center;
     margin-top: 5rem;
     padding: 0;
+}
+
+footer .footer-links ul li a:hover{
+    color: var(--white);
+}
+
+footer .social-media ul li a {
+    color: var(--dark-desaturated-cyan);
+    transition: all .3s ease-in-out;
+}
+
+footer .social-media ul li a:hover {
+    color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
@@ -418,6 +439,10 @@ footer .social-media ul {
     }
     #features .feature .feature-text p {
         padding: 0;
+    }
+
+    .feature-text a::after {
+        width: 100%;
     }
 
     #services {
