@@ -25,11 +25,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/232351271-60cba12e-ba8c-4521-a1f0-2273845d8245.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/Robertron624/sunnyside-agency-landing-page)
+- Live Site URL: [https://statuesque-cat-194df7.netlify.app/)
 
 ## My process
 
