@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/sunnyside-agency-landing-page)
-- Live Site URL: [https://statuesque-cat-194df7.netlify.app/)
+- Live Site URL: [Live Site URL](https://statuesque-cat-194df7.netlify.app/)
 
 ## My process
 
@@ -41,7 +41,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
 
 ### What I learned
 
